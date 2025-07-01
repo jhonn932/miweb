@@ -46,3 +46,5 @@ async function ejecutar() {
     doc2.textContent = "Listo";
 }
 
+ejecutar();
+
