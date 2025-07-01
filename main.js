@@ -35,4 +35,14 @@ async function cargaUsuarios() {
     }
 }
 
-cargaUsuarios();
+ //mas ejemplos de programacion async 
+async function esperar(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function ejecutar() {
+    doc1.textContent = "Esperando 2 Segundos...";
+    await esperar(2000);   //esperamos sin bloquear el navegador
+    doc2.textContent = "Listo";
+}
+
